@@ -1,0 +1,12 @@
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-03-18 15:51:43
+project --topLevelPackage cfg --projectName springcfg --java 6 --packaging JAR
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-03-18 15:51:46
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-03-18 15:52:08
+jpa setup --provider HIBERNATE --database MYSQL --databaseName springcfg --userName root --password admin 
+entity jpa --class ~.model.AppConfig --abstract false --testAutomatically true --mappedSuperclass false --equals false --serializable false --permitReservedWords false --activeRecord false 
+repository jpa --interface ~.model.AppConfigRepository --entity ~.model.AppConfig 
+field string --fieldName propertyName --notNull false --nullRequired false --sizeMin 1 --sizeMax 100 --transient false --unique true --permitReservedWords false 
+field string --fieldName propertyValue --notNull false --nullRequired false --sizeMax 100 --transient false --unique false --permitReservedWords false 
+web mvc setup 
+web mvc all --package ~.web 
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-03-19 12:23:33
