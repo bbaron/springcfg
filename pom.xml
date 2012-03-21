@@ -7,8 +7,8 @@
 	<packaging>pom</packaging>
 	<version>0.1.0.BUILD-SNAPSHOT</version>
 	<name>springcfg-parent</name>
-  <modules>
-    <module>springcfg</module>
-    <module>examples</module>
-  </modules>
+	<modules>
+		<module>springcfg</module>
+		<module>examples</module>
+	</modules>
 </project>
