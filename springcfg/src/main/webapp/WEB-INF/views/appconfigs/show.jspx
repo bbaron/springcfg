@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
-    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
-    <jsp:output omit-xml-declaration="yes"/>
-    <page:show id="ps_cfg_model_AppConfig" object="${appconfig}" path="/appconfigs" z="SLnbjhtwP9k6p26uarTsIfZBpjU=">
-        <field:display field="propertyName" id="s_cfg_model_AppConfig_propertyName" object="${appconfig}" z="Q9dB+V+Ceo4nDium4Yol7YLifXE="/>
-        <field:display field="propertyValue" id="s_cfg_model_AppConfig_propertyValue" object="${appconfig}" z="KRpb0pwpMq+V4cFUCTkbby/VFzI="/>
-    </page:show>
-</div>

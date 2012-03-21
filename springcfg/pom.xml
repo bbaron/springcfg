@@ -8,13 +8,12 @@
     <version>0.1.0.BUILD-SNAPSHOT</version>
   </parent>
   <artifactId>springcfg</artifactId>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>springcfg</name>
 	<properties>
 		<aspectj.version>1.6.12</aspectj.version>
 		<java.version>6</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<roo.version>1.2.1.RELEASE</roo.version>
 		<slf4j.version>1.6.4</slf4j.version>
 		<spring.version>3.1.1.RELEASE</spring.version>
 	</properties>
@@ -29,11 +28,6 @@
 			<name>Spring Maven Milestone Repository</name>
 			<url>http://maven.springframework.org/milestone</url>
 		</repository>
-		<repository>
-			<id>spring-roo-repository</id>
-			<name>Spring Roo Repository</name>
-			<url>http://spring-roo-repository.springsource.org/release</url>
-		</repository>
 	</repositories>
 	<pluginRepositories>
 		<pluginRepository>
@@ -45,11 +39,6 @@
 			<id>spring-maven-milestone</id>
 			<name>Spring Maven Milestone Repository</name>
 			<url>http://maven.springframework.org/milestone</url>
-		</pluginRepository>
-		<pluginRepository>
-			<id>spring-roo-repository</id>
-			<name>Spring Roo Repository</name>
-			<url>http://spring-roo-repository.springsource.org/release</url>
 		</pluginRepository>
 	</pluginRepositories>
 	<dependencies>
@@ -110,13 +99,6 @@
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-lang3</artifactId>
 			<version>3.1</version>
-		</dependency>
-		<!-- ROO dependencies -->
-		<dependency>
-			<groupId>org.springframework.roo</groupId>
-			<artifactId>org.springframework.roo.annotations</artifactId>
-			<version>${roo.version}</version>
-			<scope>provided</scope>
 		</dependency>
 		<!-- Spring dependencies -->
 		<dependency>

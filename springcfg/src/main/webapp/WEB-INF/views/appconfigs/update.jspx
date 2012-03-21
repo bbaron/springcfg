@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
-    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
-    <jsp:output omit-xml-declaration="yes"/>
-    <form:update id="fu_cfg_model_AppConfig" modelAttribute="appConfig" path="/appconfigs" versionField="Version" z="FQGWLIJJ8z0NCCoiiXy5xZWnTig=">
-        <field:textarea field="propertyName" id="c_cfg_model_AppConfig_propertyName" z="jSMNBNJFrZvxJ/HHrag5J9RouC0="/>
-        <field:textarea field="propertyValue" id="c_cfg_model_AppConfig_propertyValue" z="tE6Q+5juYqpVFKN7rtTVV3IEmKs="/>
-    </form:update>
-</div>
