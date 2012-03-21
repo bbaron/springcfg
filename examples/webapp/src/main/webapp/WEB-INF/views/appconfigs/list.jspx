@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_cfg_model_AppConfig" items="${appconfigs}" z="eTP9xpsAaPaymtiUj+Wgutper4Y=">
+        <table:table data="${appconfigs}" id="l_cfg_model_AppConfig" path="/appconfigs" z="go30skqhAlyOPS9/FvMi42Eancs=">
+            <table:column id="c_cfg_model_AppConfig_propertyName" property="propertyName" z="u4T/S/9UyNwDufAIy/Fodjcrr4U="/>
+            <table:column id="c_cfg_model_AppConfig_propertyValue" property="propertyValue" z="gTl05LhB91mfz+56zEwb4+FVvlU="/>
+        </table:table>
+    </page:list>
+</div>
