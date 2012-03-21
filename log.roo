@@ -10,3 +10,4 @@ field string --fieldName propertyValue --notNull false --nullRequired false --si
 web mvc setup 
 web mvc all --package ~.web 
 // Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-03-19 12:23:33
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-03-21 09:40:52
