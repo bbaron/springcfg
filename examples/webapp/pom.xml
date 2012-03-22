@@ -21,6 +21,14 @@
 	<dependencies>
 		<!-- General dependencies for standard applications -->
 		<dependency>
+			<groupId>${h2.groupId}</groupId>
+			<artifactId>${h2.artifactId}</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>${mysql.groupId}</groupId>
+			<artifactId>${mysql.artifactId}</artifactId>
+		</dependency>
+		<dependency>
 			<groupId>com.google.guava</groupId>
 			<artifactId>guava</artifactId>
 		</dependency>
@@ -91,10 +99,6 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-aspects</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.hibernate</groupId>
