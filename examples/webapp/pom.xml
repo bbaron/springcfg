@@ -10,14 +10,6 @@
 	<artifactId>example-webapp</artifactId>
 	<packaging>war</packaging>
 	<name>springcfg example-webapp</name>
-	<properties>
-		<aspectj.version>1.6.12</aspectj.version>
-		<java.version>6</java.version>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<roo.version>1.2.1.RELEASE</roo.version>
-		<slf4j.version>1.6.4</slf4j.version>
-		<spring.version>3.1.1.RELEASE</spring.version>
-	</properties>
 	<dependencies>
 		<!-- General dependencies for standard applications -->
 		<dependency>
@@ -71,13 +63,6 @@
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-lang3</artifactId>
-		</dependency>
-		<!-- ROO dependencies -->
-		<dependency>
-			<groupId>org.springframework.roo</groupId>
-			<artifactId>org.springframework.roo.annotations</artifactId>
-			<version>${roo.version}</version>
-			<scope>provided</scope>
 		</dependency>
 		<!-- Spring dependencies -->
 		<dependency>

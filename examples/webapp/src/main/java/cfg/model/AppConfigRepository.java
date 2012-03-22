@@ -1,7 +1,9 @@
 package cfg.model;
 
-import org.springframework.roo.addon.layers.repository.jpa.RooJpaRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
+import org.springframework.stereotype.Repository;
 
-@RooJpaRepository(domainType = AppConfig.class)
-public interface AppConfigRepository {
+@Repository
+public interface AppConfigRepository extends JpaSpecificationExecutor<AppConfig>, JpaRepository<AppConfig, Long> {
 }
