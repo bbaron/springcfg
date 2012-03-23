@@ -1,4 +1,4 @@
-package cfg.config;
+package org.github.bbaron.springcfg.config;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

@@ -1,15 +1,15 @@
-package cfg.web.config;
+package org.github.bbaron.springcfg.config.web.config;
 
 import javax.servlet.ServletContext;
 
+import org.github.bbaron.springcfg.config.BootstrapConfig;
+import org.github.bbaron.springcfg.config.Config;
+import org.github.bbaron.springcfg.config.DeployedProfile;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 import org.springframework.web.context.ServletContextAware;
 
-import cfg.config.BootstrapConfig;
-import cfg.config.Config;
-import cfg.config.DeployedProfile;
 
 @Configuration
 @Import(BootstrapConfig.class)

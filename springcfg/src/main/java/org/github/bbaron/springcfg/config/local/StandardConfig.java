@@ -1,5 +1,7 @@
-package cfg.config.local;
+package org.github.bbaron.springcfg.config.local;
 
+import org.github.bbaron.springcfg.config.BootstrapConfig;
+import org.github.bbaron.springcfg.config.Config;
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
@@ -8,8 +10,6 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.Profile;
 
-import cfg.config.BootstrapConfig;
-import cfg.config.Config;
 
 @Configuration
 @Import(BootstrapConfig.class)

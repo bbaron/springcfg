@@ -1,4 +1,4 @@
-package cfg.config;
+package org.github.bbaron.springcfg.config;
 
 
 public interface Config {

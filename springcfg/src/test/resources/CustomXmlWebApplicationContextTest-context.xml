@@ -4,9 +4,9 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd"
 	profile="deployed">
-	<context:component-scan base-package="cfg.web.config" />
+	<context:component-scan base-package="org.github.bbaron.springcfg.config.web" />
 	<beans profile="web">
-		<bean id="testBean" class="cfg.model.TestBean">
+		<bean id="testBean" class="org.github.bbaron.springcfg.model.TestBean">
 			<property name="prop1" value="${prop1}" />
 			<property name="prop2" value="${prop2}" />
 		</bean>

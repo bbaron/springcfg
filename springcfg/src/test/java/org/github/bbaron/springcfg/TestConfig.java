@@ -1,12 +1,12 @@
-package cfg;
+package org.github.bbaron.springcfg;
 
+import org.github.bbaron.springcfg.config.local.StandardConfig;
+import org.github.bbaron.springcfg.model.TestBean;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 
-import cfg.config.local.StandardConfig;
-import cfg.model.TestBean;
 
 @Configuration
 @Import(StandardConfig.class)

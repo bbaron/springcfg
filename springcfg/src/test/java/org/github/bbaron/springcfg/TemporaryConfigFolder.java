@@ -1,4 +1,4 @@
-package cfg;
+package org.github.bbaron.springcfg;
 
 import java.io.File;
 import java.io.FileWriter;

@@ -1,4 +1,4 @@
-package cfg.config;
+package org.github.bbaron.springcfg.config;
 
 import java.io.File;
 import java.io.IOException;

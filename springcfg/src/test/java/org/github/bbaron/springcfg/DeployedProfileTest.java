@@ -1,4 +1,4 @@
-package cfg;
+package org.github.bbaron.springcfg;
 
 import static com.google.common.collect.Maps.*;
 import static org.junit.Assert.*;
@@ -6,12 +6,12 @@ import static org.springframework.core.env.StandardEnvironment.*;
 
 import java.util.Map;
 
+import org.github.bbaron.springcfg.model.TestBean;
 import org.junit.Rule;
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.core.env.MapPropertySource;
 
-import cfg.model.TestBean;
 
 import com.google.common.collect.ImmutableMap;
 
