@@ -1,4 +1,4 @@
-package cfg.model;
+package org.github.bbaron.springcfg.example.webapp.model;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;

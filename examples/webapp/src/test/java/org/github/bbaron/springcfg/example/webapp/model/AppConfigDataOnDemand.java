@@ -1,4 +1,4 @@
-package cfg.model;
+package org.github.bbaron.springcfg.example.webapp.model;
 
 import java.security.SecureRandom;
 import java.util.ArrayList;
@@ -12,6 +12,7 @@ import javax.validation.ConstraintViolationException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.stereotype.Component;
+
 
 @Component
 @Configurable

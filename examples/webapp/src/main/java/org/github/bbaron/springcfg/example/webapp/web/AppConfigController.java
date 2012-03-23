@@ -1,10 +1,12 @@
-package cfg.web;
+package org.github.bbaron.springcfg.example.webapp.web;
 
 import java.io.UnsupportedEncodingException;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 
+import org.github.bbaron.springcfg.example.webapp.model.AppConfig;
+import org.github.bbaron.springcfg.example.webapp.model.AppConfigRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -16,8 +18,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.util.UriUtils;
 import org.springframework.web.util.WebUtils;
 
-import cfg.model.AppConfig;
-import cfg.model.AppConfigRepository;
 
 @RequestMapping("/appconfigs")
 @Controller

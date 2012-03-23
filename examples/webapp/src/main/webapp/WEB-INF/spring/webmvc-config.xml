@@ -73,5 +73,5 @@
       </list>
     </property>
   </bean>
-<bean class="cfg.web.ApplicationConversionServiceFactoryBean" id="applicationConversionService"/>
+<bean class="org.github.bbaron.springcfg.example.webapp.web.ApplicationConversionServiceFactoryBean" id="applicationConversionService"/>
 </beans>

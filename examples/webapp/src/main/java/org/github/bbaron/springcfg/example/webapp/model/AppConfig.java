@@ -1,4 +1,4 @@
-package cfg.model;
+package org.github.bbaron.springcfg.example.webapp.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
