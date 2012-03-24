@@ -12,6 +12,7 @@
 	<name>springcfg-examples-parent</name>
 	<modules>
 		<module>webapp</module>
+		<module>batch</module>
 	</modules>
 	<dependencyManagement>
 		<dependencies>
