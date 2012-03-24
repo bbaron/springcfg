@@ -13,6 +13,10 @@
 	<dependencies>
 		<!-- General dependencies for standard applications -->
 		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>springcfg</artifactId>
+		</dependency>
+		<dependency>
 			<groupId>${h2.groupId}</groupId>
 			<artifactId>${h2.artifactId}</artifactId>
 		</dependency>
