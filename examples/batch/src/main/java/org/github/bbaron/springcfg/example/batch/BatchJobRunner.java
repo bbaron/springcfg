@@ -2,6 +2,7 @@ package org.github.bbaron.springcfg.example.batch;
 
 import static java.nio.file.Files.*;
 import static org.github.bbaron.springcfg.config.Springcfg.*;
+import static org.springframework.core.env.AbstractEnvironment.*;
 
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -19,7 +20,7 @@ public class BatchJobRunner {
 			Files.copy(propertiesPath, appcfgDir.resolve(propertiesPath.getFileName()));
 		}
 		System.out.println("cfg dir = " + appcfgDir);
-		System.setProperty("spring.profiles.active", "deployed");
+		System.setProperty(ACTIVE_PROFILES_PROPERTY_NAME, "deployed");
 		System.setProperty(APP_CFG_PROPERTY_NAME, appcfgDir.toString());
 		String[] args = { "classpath:/launch-context.xml", "job1" };
 		CommandLineJobRunner.main(args);
