@@ -10,6 +10,11 @@
 	<artifactId>example-batch</artifactId>
 	<packaging>jar</packaging>
 	<name>springcfg example-batch</name>
+	<properties>
+<!-- 		<maven.compiler.target>1.7</maven.compiler.target> -->
+<!-- 		<maven.compiler.source>1.7</maven.compiler.source> -->
+		<java.version>7</java.version>
+	</properties>
 	<dependencies>
 		<!-- General dependencies for standard applications -->
 		<dependency>
