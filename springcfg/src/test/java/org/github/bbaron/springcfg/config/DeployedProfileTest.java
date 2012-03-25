@@ -1,6 +1,7 @@
 package org.github.bbaron.springcfg.config;
 
 import static com.google.common.collect.Maps.*;
+import static org.github.bbaron.springcfg.config.Springcfg.*;
 import static org.junit.Assert.*;
 import static org.springframework.core.env.StandardEnvironment.*;
 
@@ -11,7 +12,6 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.core.env.MapPropertySource;
-
 
 import com.google.common.collect.ImmutableMap;
 
@@ -26,9 +26,9 @@ public class DeployedProfileTest {
 	public void sourceFromSystemEnv() throws Exception {
 		sysEnvConfig.saveProperties("envvar1", "envvar2");
 		Map<String, ?> extraProperties = ImmutableMap.of(
-				"app.cfg", sysEnvConfig.getAppCfg(), 
-				"app.base",	sysEnvConfig.getAppBase(), 
-				"app.name", sysEnvConfig.getAppName());
+				APP_CFG_PROPERTY_NAME, sysEnvConfig.getAppCfg(), 
+				APP_BASE_PROPERTY_NAME,	sysEnvConfig.getAppBase(), 
+				APP_NAME_PROPERTY_NAME, sysEnvConfig.getAppName());
 		AnnotationConfigApplicationContext ctx = newAnnotationConfigContextLoader(TestConfig.class);
 		replacePropertySource(ctx, SYSTEM_ENVIRONMENT_PROPERTY_SOURCE_NAME, extraProperties);
 		ctx.getEnvironment().setActiveProfiles("deployed");
@@ -44,14 +44,14 @@ public class DeployedProfileTest {
 	public void sourceFromSystemProperties() throws Exception {
 		sysEnvConfig.saveProperties("envvar1", "envvar2");
 		Map<String, ?> envProperties = ImmutableMap.of(
-				"app.cfg", sysEnvConfig.getAppCfg(), 
-				"app.base",	sysEnvConfig.getAppBase(), 
-				"app.name", sysEnvConfig.getAppName());
+				APP_CFG_PROPERTY_NAME, sysEnvConfig.getAppCfg(), 
+				APP_BASE_PROPERTY_NAME,	sysEnvConfig.getAppBase(), 
+				APP_NAME_PROPERTY_NAME, sysEnvConfig.getAppName());
 		sysPropConfig.saveProperties("propvar1", "propvar2");
 		Map<String, ?> syspropProperties = ImmutableMap.of(
-				"app.cfg", sysPropConfig.getAppCfg(), 
-				"app.base",	sysPropConfig.getAppBase(), 
-				"app.name", sysPropConfig.getAppName());
+				APP_CFG_PROPERTY_NAME, sysPropConfig.getAppCfg(), 
+				APP_BASE_PROPERTY_NAME,	sysPropConfig.getAppBase(), 
+				APP_NAME_PROPERTY_NAME, sysPropConfig.getAppName());
 		AnnotationConfigApplicationContext ctx = newAnnotationConfigContextLoader(TestConfig.class);
 		replacePropertySource(ctx, SYSTEM_PROPERTIES_PROPERTY_SOURCE_NAME, syspropProperties);
 		replacePropertySource(ctx, SYSTEM_ENVIRONMENT_PROPERTY_SOURCE_NAME, envProperties);

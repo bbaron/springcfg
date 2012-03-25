@@ -12,25 +12,25 @@ import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-@ContextConfiguration(locations={"/launch-context.xml"})
+@ContextConfiguration(locations = { "/launch-context.xml" })
 @RunWith(SpringJUnit4ClassRunner.class)
 @ActiveProfiles("deployed")
 public class ExampleJobConfigurationTests {
-	
+
 	@Autowired
 	private JobLauncher jobLauncher;
 
 	@Autowired
 	private Job job;
-	
+
 	@Test
 	public void testSimpleProperties() throws Exception {
 		assertNotNull(jobLauncher);
 	}
-	
+
 	@Test
 	public void testLaunchJob() throws Exception {
 		jobLauncher.run(job, new JobParameters());
 	}
-	
+
 }

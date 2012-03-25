@@ -1,32 +1,38 @@
 package org.github.bbaron.springcfg.config.local;
 
 import org.github.bbaron.springcfg.config.BootstrapConfig;
-import org.github.bbaron.springcfg.config.Config;
-import org.springframework.beans.BeansException;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.ApplicationContextAware;
+import org.github.bbaron.springcfg.config.Springcfg;
+import org.springframework.context.EnvironmentAware;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.Profile;
+import org.springframework.core.env.Environment;
 
 
 @Configuration
 @Import(BootstrapConfig.class)
 @Profile("deployed")
-public class StandardConfig implements Config, ApplicationContextAware  {
+public class StandardConfig implements Springcfg, EnvironmentAware  {
 
-	private ApplicationContext ctx;
+	private Environment env;
 	
-	@Override
-	@Bean
-	public String getApplicationName() {
-		return ctx.getEnvironment().getProperty("app.name", "local");
+	public StandardConfig() {
+	}
+
+	public StandardConfig(Environment env) {
+		this.env = env;
 	}
 
 	@Override
-	public void setApplicationContext(ApplicationContext ctx) throws BeansException {
-		this.ctx = ctx;
+	@Bean
+	public String getApplicationName() {
+		return env.getProperty(APP_NAME_PROPERTY_NAME, APP_NAME_DEFAULT);
+	}
+
+	@Override
+	public void setEnvironment(Environment env) {
+		this.env = env;
 	}
 
 }

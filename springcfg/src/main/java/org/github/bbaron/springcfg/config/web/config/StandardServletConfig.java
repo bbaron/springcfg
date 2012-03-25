@@ -3,7 +3,7 @@ package org.github.bbaron.springcfg.config.web.config;
 import javax.servlet.ServletContext;
 
 import org.github.bbaron.springcfg.config.BootstrapConfig;
-import org.github.bbaron.springcfg.config.Config;
+import org.github.bbaron.springcfg.config.Springcfg;
 import org.github.bbaron.springcfg.config.DeployedProfile;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -14,7 +14,7 @@ import org.springframework.web.context.ServletContextAware;
 @Configuration
 @Import(BootstrapConfig.class)
 @DeployedProfile("web")
-public class StandardServletConfig implements Config, ServletContextAware {
+public class StandardServletConfig implements Springcfg, ServletContextAware {
 
 	private ServletContext ctx;
 
