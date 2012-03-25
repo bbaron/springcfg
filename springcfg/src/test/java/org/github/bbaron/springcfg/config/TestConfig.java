@@ -1,7 +1,7 @@
-package org.github.bbaron.springcfg;
+package org.github.bbaron.springcfg.config;
 
 import org.github.bbaron.springcfg.config.local.StandardConfig;
-import org.github.bbaron.springcfg.model.TestBean;
+import org.github.bbaron.springcfg.config.model.TestBean;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

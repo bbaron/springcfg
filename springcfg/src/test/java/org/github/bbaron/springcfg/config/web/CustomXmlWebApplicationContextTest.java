@@ -1,16 +1,14 @@
-package org.github.bbaron.springcfg.web;
+package org.github.bbaron.springcfg.config.web;
 
 import static org.junit.Assert.*;
 import static org.springframework.web.context.ContextLoader.*;
 
+import org.github.bbaron.springcfg.config.model.TestBean;
 import org.github.bbaron.springcfg.config.web.CustomWebApplicationContextInitializer;
-import org.github.bbaron.springcfg.model.TestBean;
 import org.junit.Test;
 import org.springframework.mock.web.MockServletContext;
 import org.springframework.web.context.ContextLoaderListener;
 import org.springframework.web.context.WebApplicationContext;
-
-
 
 public class CustomXmlWebApplicationContextTest {
 

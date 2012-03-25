@@ -1,4 +1,4 @@
-package org.github.bbaron.springcfg;
+package org.github.bbaron.springcfg.config;
 
 import static com.google.common.collect.Maps.*;
 import static org.junit.Assert.*;
@@ -6,7 +6,7 @@ import static org.springframework.core.env.StandardEnvironment.*;
 
 import java.util.Map;
 
-import org.github.bbaron.springcfg.model.TestBean;
+import org.github.bbaron.springcfg.config.model.TestBean;
 import org.junit.Rule;
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;

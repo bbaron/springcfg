@@ -1,4 +1,4 @@
-package org.github.bbaron.springcfg.model;
+package org.github.bbaron.springcfg.config.model;
 
 public class TestBean {
 
